@@ -1,0 +1,44 @@
+
+ .left{
+    color: transparent;
+    -webkit-text-stroke: 0.5px beige;
+    position: relative;
+ }
+  nav .left::before{
+    content:"Cherish's Portfolio";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    overflow: hidden;
+    color: whitesmoke;
+    border-right: 3px  blueviolet;
+    transition: 0.0s ease-in-out;
+ }
+  nav .left:hover::before{
+    width: 100%;
+    filter: drop-shadow(10px 20px 40px blueviolet);
+ }
+ .neon{
+    color: #fff;
+    text-shadow:
+        0 0 1px rgb(139, 97, 178),
+        0 0 3px rgb(139, 97, 178),
+        0 0 7px rgb(139, 97, 178),
+        0 0 10px blueviolet,
+        0 0 21px blueviolet,
+        0 0 42px blueviolet,
+        0 0 82px blueviolet,
+        0 0 92px blueviolet;
+  }
+  .neon-ele{
+    color: #fff;
+    text-shadow:
+        0 0 1px rgb(139, 97, 178),
+        0 0 3px rgb(139, 97, 178),
+        0 0 7px rgb(139, 97, 178),
+        0 0 10px blueviolet,
+        0 0 21px blueviolet,
+        0 0 42px blueviolet,
+        0 0 82px blueviolet,
+        0 0 92px blueviolet;
+  }

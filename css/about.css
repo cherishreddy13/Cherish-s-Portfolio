@@ -1,0 +1,163 @@
+*{
+   margin: 0 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.about{
+   display: flex;
+   height: 120vh;
+}
+.pic{
+   height: 35vh;
+   border-radius: 50%;
+   position: relative;
+   top: 250px;
+   right: -450px;
+}
+.pic:hover{
+   color: #fff;
+box-shadow:
+ 0 0 1px rgb(139, 97, 178),
+ 0 0 2px rgb(139, 97, 178),
+ 0 0 7px rgb(139, 97, 178),
+ 0 0 10px blueviolet,
+ 0 0 25px blueviolet,
+ 0 0 36px blueviolet,
+ 0 0 45px blueviolet,
+ 0 0 60px blueviolet;;
+}
+.nam{
+   font-size: 3rem;
+   font-weight: 800;
+   position: relative;
+   top: 100px;
+   right: -660px;
+}
+.nam:hover{
+   color: #fff;
+text-shadow:
+0 0 1px rgb(139, 97, 178),
+0 0 2px rgb(139, 97, 178),
+0 0 7px rgb(139, 97, 178),
+0 0 10px blueviolet,
+0 0 25px blueviolet,
+0 0 36px blueviolet,
+0 0 45px blueviolet,
+0 0 60px blueviolet;;
+}
+.abt{
+   width: 25vw;
+   text-align: center;
+   position: relative;
+   right: 300px;
+   top: 240px;
+}
+.ped{
+   font-weight: 1000;
+   font-size: 30px;
+}
+.det{
+   position: relative;
+   top: 240px;
+   right: -350px;
+}
+.det .big{
+   font-weight: 1000;
+   font-size: 30px;
+}
+.big:hover{
+   color: #fff;
+text-shadow:
+0 0 1px rgb(139, 97, 178),
+0 0 2px rgb(139, 97, 178),
+0 0 7px rgb(139, 97, 178),
+0 0 10px blueviolet,
+0 0 25px blueviolet,
+0 0 36px blueviolet,
+0 0 45px blueviolet,
+0 0 60px blueviolet;;
+}
+.ped:hover{
+   color: #fff;
+text-shadow:
+0 0 1px rgb(139, 97, 178),
+0 0 2px rgb(139, 97, 178),
+0 0 7px rgb(139, 97, 178),
+0 0 10px blueviolet,
+0 0 25px blueviolet,
+0 0 36px blueviolet,
+0 0 45px blueviolet,
+0 0 60px blueviolet;;
+}
+.in{
+   height: 30px;
+}
+.tweet{
+   height: 40px;
+   position: relative;
+   top: 6px;
+}
+.insta{
+   height: 40px;
+   position: relative;
+   top: 4px;
+}
+.git{
+   height: 60px;
+   position: relative;
+   top: 12px;
+}
+.sm{
+   position: relative;
+   right: -550px;
+   top: -230px;
+}
+.in:hover{
+   color: #fff;
+box-shadow:
+ 0 0 1px rgb(139, 97, 178),
+ 0 0 2px rgb(139, 97, 178),
+ 0 0 7px rgb(139, 97, 178),
+ 0 0 10px blueviolet,
+ 0 0 25px blueviolet,
+ 0 0 36px blueviolet,
+ 0 0 45px blueviolet,
+ 0 0 60px blueviolet;;
+}
+.tweet:hover{
+   color: #fff;
+box-shadow:
+ 0 0 1px rgb(139, 97, 178),
+ 0 0 2px rgb(139, 97, 178),
+ 0 0 7px rgb(139, 97, 178),
+ 0 0 10px blueviolet,
+ 0 0 25px blueviolet,
+ 0 0 36px blueviolet,
+ 0 0 45px blueviolet,
+ 0 0 60px blueviolet;;
+}
+.insta:hover{
+   color: #fff;
+box-shadow:
+ 0 0 1px rgb(139, 97, 178),
+ 0 0 2px rgb(139, 97, 178),
+ 0 0 7px rgb(139, 97, 178),
+ 0 0 10px blueviolet,
+ 0 0 25px blueviolet,
+ 0 0 36px blueviolet,
+ 0 0 45px blueviolet,
+ 0 0 60px blueviolet;;
+}
+.git:hover{
+   color: #fff;
+box-shadow:
+ 0 0 1px rgb(139, 97, 178),
+ 0 0 2px rgb(139, 97, 178),
+ 0 0 7px rgb(139, 97, 178),
+ 0 0 10px blueviolet,
+ 0 0 25px blueviolet,
+ 0 0 36px blueviolet,
+ 0 0 45px blueviolet,
+ 0 0 60px blueviolet;;
+}
+
