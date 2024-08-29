@@ -61,7 +61,7 @@
  
  .name {
    background-color: #ebebeb;
-   color: white;
+   color: black;
  }
  .name:hover {
    border-bottom: 5px solid #0e3721;
