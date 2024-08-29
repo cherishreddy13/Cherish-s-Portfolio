@@ -35,15 +35,29 @@
     </header>
     <main>
       <div class="wrapper">
-         <form class="form">
-           <div class="pageTitle title">Contact Me </div>
-           <div class="secondaryTitle title">fill this form</div>
-           <input type="text" class="name formEntry" placeholder="Name" />
-           <input type="text" class="email formEntry" placeholder="Email"/>
-           <textarea class="message formEntry" placeholder="Message"></textarea>
-           <button class="submit formEntry" onclick="thanks()">Submit</button>
-         </form>
-       </div>
+        <form class="form" action="https://api.web3forms.com/submit" method="POST">
+
+          <div class="pageTitle title">Contact Me</div>
+
+          <div class="secondaryTitle title">Fill the Form</div>
+
+          <!-- Replace with your Access Key -->
+          <input type="hidden" name="access_key" value="a42132b6-d2d7-4d33-af5e-eeab91ee65d3">
+      
+          <!-- Form Inputs. Each input must have a name="" attribute -->
+          <input type="text" name="name" class="name formEntry" placeholder="Name" required>
+          <input type="email" name="email" class="email formEntry" placeholder="Email" required>
+          <textarea name="message" class="message formEntry" placeholder="Enter Your Message" required></textarea>
+      
+          <!-- Honeypot Spam Protection -->
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+      
+          <!-- Custom Confirmation / Success Page -->
+          <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+      
+          <button class="submit formEntry" type="submit">Submit Form</button>
+      </form>
+           </div>
        <script src="app.js"></script>
        <hr>
     </main>
