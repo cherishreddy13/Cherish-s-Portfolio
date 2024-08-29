@@ -16,7 +16,7 @@
    align-items: center;
    position: relative;
    margin-top: 100px;
-   margin-bottom: 100px;
+   margin-bottom: 150px;
  }
 
 .background{
@@ -34,7 +34,7 @@
     border-radius: 50%;
 }
 form{
-    height: 520px;
+    height: 550px;
     width: 400px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -131,4 +131,7 @@ button:hover{
 }
 .social i{
   margin-right: 4px;
+}
+.signup{
+  text-align: center;
 }
