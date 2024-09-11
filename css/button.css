@@ -1,0 +1,65 @@
+@import "https://unpkg.com/open-props@1.6.17/easings.min.css";
+
+
+@keyframes sheen {
+  100% {
+    transform: rotateZ(60deg) translate(1em, -9em);
+  }
+}
+
+[anim="sheen"]:not(.toggled)::after {
+  animation: sheen var(--ease-elastic-in-1) 1s infinite;
+}
+
+
+
+[anim="sheen"]::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -50%;
+  bottom: -50%;
+  left: -50%;
+  background: var(--red-sheen);
+  transform: rotateZ(60deg) translate(-5em, 7.5em);
+}
+
+:root {
+   --black: hsl(0, 0%, 0%); /* Background set to black */
+   --dark: hsl(250, 50%, 10%); /* Dark shade of blurpurple */
+   --gray: hsl(250, 15%, 70%); /* Gray with a purple tint */
+   --white: hsl(0, 0%, 100%); /* Text set to white */
+   --red: hsl(284, 80%, 63%); /* Blurpurple for border or highlights */
+   --red-shadow: hsl(288, 66%, 54%); /* Darker blurpurple for shadow */
+   --red-sheen: linear-gradient(
+     to bottom,
+     hsl(282, 56%, 60%),
+     hsla(289, 55%, 44%, 0.5) 50%,
+     hsl(287, 73%, 35%)
+   ); /* Purple sheen gradient */
+ }
+ 
+
+button {
+  all: unset;
+  background-color: var(--black);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--red);
+  box-shadow: 0 0 4px var(--red-shadow);
+  cursor: pointer;
+  perspective: 1000px;
+  position: relative;
+  left: 35px;
+  top: 5vh;
+  overflow: hidden;
+}
+
+
+.leftsection a{
+   text-decoration: none;
+   color: white;
+ }
