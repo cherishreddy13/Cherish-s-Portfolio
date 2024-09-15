@@ -15,10 +15,19 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/foot.css">
     <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/cursor.scss">
     <meta name="google-site-verification" content="FRS71Hbc_F8Ap9KqKF94guEDIhVCoHhSujOK0CmRQ6Y" />
   </head>
   <body>
-    <header>
+      <!-- Preloader -->
+  <div id="preloader">
+      <img src="assets/cp.gif" alt="">
+  </div>
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+
+  <script src="script.js"></script>
+      <header>
       <nav>
         <div class="left">Cherish's Portfolio</div>
         <div class="right">
@@ -30,10 +39,11 @@
             <li><a href="contact.html">contact me </a></li>
             <li><a href="login.html">Login</a></li>
           </ul>
-        </div>
       </nav>
     </header>
     <main>
+      <div class="cursor"></div>
+      <script src="java/script.js"></script>
       <section class="firstsection">
         <div class="leftsection">
           Hi, i am <span class="purple neon">CHERISH</span>
@@ -187,6 +197,7 @@
           </div>
         </div>
       </article>
+    </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -195,6 +206,20 @@
         loop:true,
         backDelay: 10
       });
+
+      // script.js
+
+// Hide preloader and show content after 3 seconds
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('preloader').style.display = 'none';
+    document.getElementById('main-content').style.display = 'block';
+  }, 2000); // 3000 ms = 3 seconds
+});
+
     </script>
+    
   </body>
 </html>
+
+
