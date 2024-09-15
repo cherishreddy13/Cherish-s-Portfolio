@@ -17,6 +17,15 @@
     <link rel="stylesheet" href="css/foot.css">
   </head>
   <body>
+       <!-- Preloader -->
+       <div id="preloader">
+        <img src="assets/cp.gif" alt="">
+    </div>
+
+  <!-- Main Content -->
+  <div id="main-content" style="display:none;">
+
+  <script src="script.js"></script>
     <header>
       <nav>
         <div class="left">Cherish's Portfolio</div>
@@ -76,5 +85,15 @@
           </div>
         </div>
       </article>
+    </div>
   </body>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+      }, 2000); // 3000 ms = 3 seconds
+    });
+    
+  </script>
 </html>
