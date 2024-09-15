@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="css/contact.css">
   </head>
   <body>
+    <div id="preloader">
+      <img src="assets/cp.gif" alt="">
+  </div>
+  <div id="main-content" style="display:none;">
+
+    <script src="script.js"></script>
     <header>
       <nav>
         <div class="left">Cherish's Portfolio</div>
@@ -85,5 +91,15 @@
         </div>
       </article>
     </article>
+    </div>
   </body>
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('preloader').style.display = 'none';
+        document.getElementById('main-content').style.display = 'block';
+      }, 2000); // 3000 ms = 3 seconds
+    });
+    
+  </script>
 </html>
