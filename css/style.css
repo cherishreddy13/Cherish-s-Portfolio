@@ -14,8 +14,7 @@
    color: whitesmoke;
    font-family: "Poppins", sans-serif;
    font-weight: 400;
-   overflow : hidden;
- }
+   overflow-x: hidden; }
  nav {
    display: flex;
    justify-content: space-around;
