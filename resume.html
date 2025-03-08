@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>resume</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/foot.css">
+   <link rel="stylesheet" href="css/head.css">
+   <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+   <div class="cursor"></div>
+     <!-- Preloader -->
+ <div id="preloader">
+     <img src="assets/cp.gif" alt="">
+ </div>
+ <!-- Main Content -->
+ <div id="main-content" style="display:none;">
+ <script src="script.js"></script>
+     <header>
+     <nav>
+       <div class="left">Cherish's Portfolio</div>
+       <div class="right">
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="project.html">projects</a></li>
+           <li><a href="ser.html">service</a></li>
+           <li><a href="about.html">about</a></li>
+           <li><a href="contact.html">contact me </a></li>
+           <li><a href="login.html">Login</a></li>
+         </ul>
+     </nav>
+   </header>
+   <iframe src="assets/resume.pdf" width="100%" height="100%" style="width:100vw; height:100vh;"" frameborder="0"></iframe>
+</body>
+<script>
+   // Hide preloader and show content after 3 seconds
+window.addEventListener('load', () => {
+   setTimeout(() => {
+     document.getElementById('preloader').style.display = 'none';
+     document.getElementById('main-content').style.display = 'block';
+   }, 2000); // 3000 ms = 3 seconds
+ });
+</script>
+</html>
